@@ -49,4 +49,15 @@ public class Login extends TestBase{
         app.getUserHelper().pause(2000);
         Assert.assertTrue(app.getUserHelper().isElementPresent(By.xpath("//a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']")));
     }
+
+
+@Test
+
+public void negativeLoginWithoutPassword(){
+app.getUserHelper().openLoginForm();
+    app.getUserHelper().fillLoginForm(new User().withEmail("lena.postrash@gmail.com"));
+    app.getUserHelper().submitLogin();
+    app.getUserHelper().pause(1000);
+    Assert.assertTrue(app.getUserHelper().isElementPresent(By.id("password-error")));
+}
 }

@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 public class ApplicationManager {
    WebDriver wd;
    UserHelper userHelper;
+   BoardHelper boardHelper;
 
    public void init(){
        wd = new ChromeDriver();
@@ -15,9 +16,14 @@ public class ApplicationManager {
        wd.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
        wd.navigate().to("https://trello.com/home");
        userHelper = new UserHelper(wd);
+       boardHelper= new BoardHelper(wd);
    }
 
-   public void stop(){
+    public BoardHelper getBoardHelper() {
+        return boardHelper;
+    }
+
+    public void stop(){
        wd.quit();
    }
 
