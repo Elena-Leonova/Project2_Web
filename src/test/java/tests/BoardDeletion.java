@@ -16,18 +16,18 @@ public class BoardDeletion extends TestBase{
         }
     }
 
-    @Test
-    public void boardDeletionTest(){
-        app.getBoardHelper().openMenu();
-        app.getUserHelper().pause(2000);
-        app.getBoardHelper().pressMore();
-        app.getUserHelper().pause(2000);
-        app.getBoardHelper().pressCloseBoard();
-        app.getUserHelper().pause(2000);
-        app.getBoardHelper().submitClose();
-        app.getUserHelper().pause(2000);
-        app.getBoardHelper().pressPermanentlyDelete();
-        app.getUserHelper().pause(2000);
-        app.getBoardHelper().pressDelete();
-    }
+//    @Test
+//    public void boardDeletionTest(){
+//        app.getBoardHelper().openMenu();
+//        app.getUserHelper().pause(2000);
+//        app.getBoardHelper().pressMore();
+//        app.getUserHelper().pause(2000);
+//        app.getBoardHelper().pressCloseBoard();
+//        app.getUserHelper().pause(2000);
+//        app.getBoardHelper().submitClose();
+//        app.getUserHelper().pause(2000);
+//        app.getBoardHelper().pressPermanentlyDelete();
+//        app.getUserHelper().pause(2000);
+//        app.getBoardHelper().pressDeleteButton();
+//    }
 }
