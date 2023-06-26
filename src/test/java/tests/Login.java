@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class Login extends TestBase{
 
-@Test(priority = 1)
+@Test
     public void positiveLoginTest(){
         app.getUserHelper().openLoginForm();
         app.getUserHelper().fillLoginForm(new User().withEmail("lena.postrash@gmail.com").withPassword("Mynameislena1!"));
@@ -38,7 +38,7 @@ public class Login extends TestBase{
 
     }
 
-    @Test(priority = 2)
+    @Test
     public void logoutTest() {
         if (app.getUserHelper().isElementPresent(By.xpath("//span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']"))) {
             app.getUserHelper().openAccountform();

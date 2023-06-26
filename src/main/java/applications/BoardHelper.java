@@ -42,4 +42,28 @@ public class BoardHelper extends HelperBase{
     public String getTitle(){
         return  wd.findElement(By.xpath("//h1[@class='HKTtBLwDyErB_o']")).getText();
     }
+
+    public void openMenu() {
+        click(By.xpath("//button[@aria-label='Show menu']"));
+    }
+
+    public void pressMore() {
+        click(By.xpath("//li[@class='board-menu-navigation-item']//a[contains(.,'More')]"));
+    }
+
+    public void pressCloseBoard() {
+        click(By.xpath("//a[@class='board-menu-navigation-item-link js-close-board']"));
+    }
+
+    public void submitClose() {
+        click(By.xpath("//input[@type='submit'] [@value='Close']"));
+    }
+
+    public void pressPermanentlyDelete() {
+        click(By.xpath("//button[text()='Permanently delete board']"));
+    }
+
+    public void pressDeleteButton() {
+        click(By.xpath("//button[@data-testid='close-board-delete-board-confirm-button']"));
+    }
 }
