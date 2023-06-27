@@ -2,6 +2,7 @@ package tests;
 
 import models.User;
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -18,18 +19,32 @@ public class BoardDeletion extends TestBase{
         }
     }
 
+//    @Test
+//    public void boardDeletionTest(){
+//        app.getBoardHelper().openMenu();
+//        app.getUserHelper().pause(3000);
+//        app.getBoardHelper().pressMore();
+//        app.getUserHelper().pause(3000);
+//        app.getBoardHelper().pressCloseBoard();
+//        app.getUserHelper().pause(2000);
+//        app.getBoardHelper().submitClose();
+//        app.getUserHelper().pause(2000);
+//        app.getBoardHelper().pressPermanentlyDelete();
+//        app.getUserHelper().pause(2000);
+//        app.getBoardHelper().pressDeleteButton();
+//    }
+
     @Test
     public void boardDeletionTest(){
-        app.getBoardHelper().openMenu();
-        app.getUserHelper().pause(3000);
-        app.getBoardHelper().pressMore();
-        app.getUserHelper().pause(3000);
-        app.getBoardHelper().pressCloseBoard();
-        app.getUserHelper().pause(2000);
-        app.getBoardHelper().submitClose();
-        app.getUserHelper().pause(2000);
-        app.getBoardHelper().pressPermanentlyDelete();
-        app.getUserHelper().pause(2000);
-        app.getBoardHelper().pressDeleteButton();
+        while(app.getBoardHelper().getBoardNumber()<8) {
+            int before = app.getBoardHelper().NumberBoards();
+            app.getBoardHelper().pause(2000);
+            app.getBoardHelper().pressFirstBoardSpot();
+            app.getBoardHelper().boardsDelitionPath();
+            int after = app.getBoardHelper().NumberBoards();
+            app.getBoardHelper().pause(2000);
+            Assert.assertEquals(before, after+1);
+        }
+
     }
 }

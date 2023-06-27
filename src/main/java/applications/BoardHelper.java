@@ -2,10 +2,11 @@ package applications;
 
 import models.Board;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
-import java.nio.file.WatchEvent;
 import java.util.List;
 
 public class BoardHelper extends HelperBase{
@@ -65,5 +66,40 @@ public class BoardHelper extends HelperBase{
 
     public void pressDeleteButton() {
         click(By.xpath("//button[@data-testid='close-board-delete-board-confirm-button']"));
+    }
+
+    
+    public void boardsDelitionPath() {
+
+       // WebElement el = wd.findElement(By.xpath("//li[@class='mlpxvZU4v4cMQN wVRQcl7CJz79Tr qUkRGnTnJDff85']//div[@role='menu']//span[@class='css-snhnyn']"));
+        WebElement el = wd.findElement(By.xpath("//span[data-testid='OverflowMenuHorizontalIcon']"));
+      //WebElement el = wd.findElement(By.xpath(""));
+        pause(2000);
+        new Actions(wd).moveToElement(el).clickAndHold().click(el).build().perform();
+        click(By.xpath("//button[@title='Close board']"));
+        pause(2000);
+        click(By.xpath("//button[@title='Close']"));
+        pause(2000);
+        click(By.cssSelector("class^='Bp80TGmc9hQIdE '"));
+        pause(2000);
+        click(By.cssSelector("//class^=a72r81xglmtLCW bxgKMAm3lq5BpA KpU415sFFvOzGZ PnEv2xIWy3eSui SEj5vUdI3VvxDc"));
+
+    //click(By.xpath("//li[@class='mlpxvZU4v4cMQN wVRQcl7CJz79Tr qUkRGnTnJDff85']//div[@role='menu']//span[@class='css-snhnyn']"));
+    }
+
+    public void pressFirstBoardSpot() {
+        click(By.xpath("By.xpath(//ul[@class='boards-page-board-section-list']//li[1])"));
+    }
+
+    public int getBoardNumber() {
+        return counterBoards(By.xpath(""));
+    }
+
+    public void boardNameModif() {
+        //type(By.xpath("//h1[@data-testid='board-name-display']"), "qa19");
+        WebElement el = wd.findElement(By.cssSelector("//div[@class='hiRkezEUBG7ve6 uXhW3KBBr1jUsJ']"));
+        pause(3000);
+        click(By.cssSelector("//div[@class='hiRkezEUBG7ve6 uXhW3KBBr1jUsJ']"));
+        new Actions(wd).moveToElement(el).click(el).sendKeys("qa19" + Keys.ENTER).build().perform();
     }
 }
