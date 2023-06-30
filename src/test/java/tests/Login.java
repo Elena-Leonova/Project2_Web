@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class Login extends TestBase{
 
-@Test
+@Test(priority = 1)
     public void positiveLoginTest(){
         app.getUserHelper().openLoginForm();
         app.getUserHelper().fillLoginForm(new User().withEmail("lena.postrash@gmail.com").withPassword("Mynameislena1!"));
@@ -16,7 +16,7 @@ public class Login extends TestBase{
         Assert.assertTrue(app.getUserHelper().isElementPresent(By.xpath("//span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']")));
     }
 
-   @Test
+   @Test(priority = 3)
     public void negativePasswordLoginTest(){
         app.getUserHelper().openLoginForm();
         app.getUserHelper().fillLoginForm(new User().withEmail("lena.postrash@gmail.com").withPassword("Mynameislena1"));
@@ -28,7 +28,7 @@ public class Login extends TestBase{
     }
 
 
-    @Test
+    @Test(priority = 4)
     public void negativeEmailLoginTest(){
         app.getUserHelper().openLoginForm();
         app.getUserHelper().pause(2000);
@@ -38,7 +38,7 @@ public class Login extends TestBase{
 
     }
 
-    @Test
+    @Test(priority = 2)
     public void logoutTest() {
         if (app.getUserHelper().isElementPresent(By.xpath("//span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']"))) {
             app.getUserHelper().openAccountform();
@@ -62,8 +62,7 @@ public class Login extends TestBase{
         }
     }
 
-@Test
-
+@Test(priority = 5)
 public void negativeLoginWithoutPassword(){
 app.getUserHelper().openLoginForm();
 app.getUserHelper().fillLoginForm(new User().withEmail("lena.postrash@gmail.com"));

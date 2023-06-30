@@ -2,8 +2,10 @@ package applications;
 
 import models.User;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 
 public class UserHelper extends HelperBase {
@@ -29,7 +31,6 @@ public class UserHelper extends HelperBase {
     public void fillEmailField(User user) {
         type(By.xpath("//input[@id='user']"), user.getEmail());
         click(By.xpath("//input[@id='login']"));
-        click(By.xpath("//input[@id='login']"));
     }
 
     public void openAccountform() {
@@ -38,10 +39,24 @@ public class UserHelper extends HelperBase {
     }
 
     public void submitLogOut() {
-        click(By.xpath("//span[normalize-space()='Log out']"));
+
+        //click(By.xpath("//span[normalize-space()='Log out']"));
+        click(By.xpath("//button[.='Log out']"));
     }
 
     public void pressOkButton() {
-        click(By.xpath("//span[contains(text(),'Log out')]"));
+
+        //click(By.xpath("//span[contains(text(),'Log out')]"));
+        click(By.xpath("//span[@class='css-178ag6o']"));
     }
+
+    public void boardNameModif() {
+        //type(By.xpath("//h1[@data-testid='board-name-display']"),"qa19");
+        WebElement el = wd.findElement(By.cssSelector(".hiRkezEUBG7ve6 uXhW3KBBr1jUsJ"));
+        pause(3000);
+        click(By.cssSelector(".hiRkezEUBG7ve6 uXhW3KBBr1jUsJ"));
+        new Actions(wd).moveToElement(el).click(el).sendKeys("name" + Keys.ENTER).build().perform();
+    }
+
+
 }

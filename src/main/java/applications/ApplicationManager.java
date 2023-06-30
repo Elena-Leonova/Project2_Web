@@ -9,6 +9,7 @@ public class ApplicationManager {
    WebDriver wd;
    UserHelper userHelper;
    BoardHelper boardHelper;
+   WorkSpaceHelper workSpaceHelper;
 
    public void init(){
        wd = new ChromeDriver();
@@ -18,6 +19,10 @@ public class ApplicationManager {
        userHelper = new UserHelper(wd);
        boardHelper= new BoardHelper(wd);
    }
+
+    public WorkSpaceHelper getWorkSpaceHelper() {
+        return workSpaceHelper;
+    }
 
     public BoardHelper getBoardHelper() {
         return boardHelper;

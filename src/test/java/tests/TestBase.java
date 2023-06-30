@@ -8,11 +8,12 @@ public class TestBase {
     protected static ApplicationManager app = new ApplicationManager();
    @BeforeClass
     public void setUp(){
-        app.init();
+
+       app.init();
     }
 @AfterClass
     public void tearDown(){
-       // app.stop();
+      // app.stop();
     }
 
 }
