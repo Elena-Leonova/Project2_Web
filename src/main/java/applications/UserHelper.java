@@ -1,6 +1,7 @@
 package applications;
 
 import models.User;
+import models.UserLombok;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -24,6 +25,13 @@ public class UserHelper extends HelperBase {
        type(By.xpath("//input[@id='password']"), user.getPassword());
     }
 
+
+    public void fillLoginForm(UserLombok userLombok) {
+        type(By.xpath("//input[@id='user']"), userLombok.getEmail());
+        click(By.xpath("//input[@id='login']"));
+        pause(3000);
+        type(By.xpath("//input[@id='password']"), userLombok.getPassword());
+    }
     public void submitLogin() {
         click(By.xpath("//span[text()='Log in']"));
     }

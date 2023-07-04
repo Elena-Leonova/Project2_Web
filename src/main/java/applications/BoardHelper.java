@@ -2,6 +2,7 @@
 package applications;
 
 import models.Board;
+import models.BoardLombok;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -31,6 +32,11 @@ import java.util.List;
         public void fillBoardForm(Board board){
             type(By.xpath("//input[@data-testid='create-board-title-input']"), board.getName());
         }
+
+        public void fillBoardForm(BoardLombok boardLombok){
+            type(By.xpath("//input[@data-testid='create-board-title-input']"), boardLombok.getName());
+        }
+
         public void submitCreate() {
             click(By.xpath("//button[@data-testid='create-board-submit-button']"));
         }
