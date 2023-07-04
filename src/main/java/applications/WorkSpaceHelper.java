@@ -13,25 +13,26 @@ public class WorkSpaceHelper extends HelperBase{
     }
 
     public void pressPlusButton() {
-        click(By.cssSelector(""));
+        //click(By.cssSelector(".vLNnCqZ9t8iYVd"));
+        click(By.cssSelector("//button[@aria-label='Create a Workspace']//span[@class='_BwhWIRGqM8j8m']"));
         pause(2000);
     }
 
     public void fillWorkSpaceForm(WorkSpace workSpace) {
-        type(By.cssSelector(""), workSpace.getName());
-        click(By.cssSelector(""));
+        type(By.cssSelector(".M2RUTkUiGCr5N6"), workSpace.getName());
+        click(By.cssSelector(".qvInLZWY0_P5sA"));
         pause(2000);
         // setTimeout(function() {
         //  debugger;
         // }, 5000);
-        click(By.xpath(""));
+        click(By.xpath("//div[@data-testid='header-create-team-type-input-education']"));
         pause(4000);
-        WebElement el = wd.findElement(By.cssSelector(""));
+        WebElement el = wd.findElement(By.cssSelector(".NP_F6C6lV9jnfd"));
         new Actions(wd).moveToElement(el).click(el).sendKeys("qa19_workspace").perform();
         pause(2000);
-        click(By.cssSelector(""));
+        click(By.cssSelector("[class^='SqloYNfCeOb7nw ']"));
         pause(2000);
-        click(By.xpath(""));
+        click(By.xpath("//a[@class='SmUK3GIaGHe3l5']"));
         pause(3000);
     }
 

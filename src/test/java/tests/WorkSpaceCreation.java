@@ -15,15 +15,14 @@ public class WorkSpaceCreation extends TestBase{
             app.getUserHelper().openLoginForm();
             app.getUserHelper().fillLoginForm(new User().withEmail("lena.postrash@gmail.com").withPassword("Mynameislena1!"));
             app.getUserHelper().submitLogin();
-            app.getUserHelper().pause(3000);
+            app.getUserHelper().pause(5000);
         }
     }
 
     @Test
-
     public void workSpaceCreationTest(){
         app.getWorkSpaceHelper().pressPlusButton();
-        String name = "qa19_" ;
+        String name = "qa19_" + (System.currentTimeMillis()/2700)%3600;
         app.getWorkSpaceHelper().fillWorkSpaceForm(new WorkSpace().withName(name));
         String title = app.getWorkSpaceHelper().getTitle();
         Assert.assertEquals(name, title);
