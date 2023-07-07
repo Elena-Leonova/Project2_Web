@@ -1,0 +1,4 @@
+10:22:58.137  INFO  tests.TestBase - Test start --> positiveLoginTest
+10:22:58.140  INFO  tests.TestBase - Test login positive --> lena.postrash@gmail.comMynameislena1!
+10:23:12.972  INFO  tests.TestBase - Logged ----
+10:23:13.008  INFO  tests.TestBase - ============================================================

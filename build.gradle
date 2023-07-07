@@ -10,8 +10,10 @@ repositories {
 }
 
 dependencies {
-    implementation group: 'org.testng', name: 'testng', version: '7.4.0'
-    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.7.0'
+    implementation 'org.testng:testng:7.5'
+   // implementation group: 'org.testng', name: 'testng', version: '7.4.0'
+    //implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
 
     compileOnly 'org.projectlombok:lombok:1.18.22'//main
     annotationProcessor 'org.projectlombok:lombok:1.18.22'

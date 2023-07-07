@@ -154,10 +154,10 @@ import java.util.List;
 
         }
 
-        public boolean waitForElementPresent(By locator, int timeOut) {
-            return new WebDriverWait(wd, timeOut)
-                    .until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator)).size() > 0;
-        }
+//        public boolean waitForElementPresent(By locator, int timeOut) {
+//            return new WebDriverWait(wd, timeOut)
+//                    .until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator)).size() > 0;
+//        }
 
         public void pressFirstBoardSpot() {
            // click(By.xpath("//ul[@class='boards-page-board-section-list']//li[1]"));
@@ -175,7 +175,8 @@ import java.util.List;
             for (int i = 1; i < numberBoards(); i++) {
                 String xp = "//ul[@class='boards-page-board-section-list']//li[" + i + "]";
                 click(By.xpath(xp));
-                waitForElementPresent(By.cssSelector(".hiRkezEUBG7ve6.uXhW3KBBr1jUsJ"), 10);
+                pause(3000);
+                //waitForElementPresent(By.cssSelector(".hiRkezEUBG7ve6.uXhW3KBBr1jUsJ"), 10);
                 WebElement el = wd.findElement(By.cssSelector(".hiRkezEUBG7ve6.uXhW3KBBr1jUsJ"));
                 new Actions(wd).moveToElement(el).click(el).sendKeys(board.getName() + Keys.ENTER).perform();
                 String title = wd.findElement(By.cssSelector(".hiRkezEUBG7ve6.uXhW3KBBr1jUsJ")).getText();

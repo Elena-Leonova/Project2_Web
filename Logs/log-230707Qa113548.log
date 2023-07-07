@@ -1,0 +1,3 @@
+11:35:54.305  INFO  applications.ApplicationManager - Test run in Chrome browser 
+11:35:56.907  INFO  tests.TestBase - Test start --> boardDeletionTest
+11:35:56.912  INFO  tests.TestBase - ============================================================
