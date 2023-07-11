@@ -188,6 +188,9 @@ import java.util.List;
 
         }
 
+        public void fillBoardForm(String title) {
+            type(By.xpath("//input[@data-testid='create-board-title-input']"), title);
+        }
     }
 
 

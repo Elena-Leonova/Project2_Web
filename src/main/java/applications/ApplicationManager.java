@@ -27,7 +27,7 @@ public class ApplicationManager {
        WebDriverListener listener = new MyListener();
        wd = new EventFiringDecorator<>(listener).decorate(wd);
 
-       wd = new ChromeDriver();
+      // wd = new ChromeDriver();
        wd.manage().window().maximize();
        wd.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
        wd.navigate().to("https://trello.com/home");
@@ -43,11 +43,12 @@ public class ApplicationManager {
         return boardHelper;
     }
 
+    public UserHelper getUserHelper() {
+        return userHelper;
+    }
+
     public void stop(){
        wd.quit();
    }
 
-    public UserHelper getUserHelper() {
-        return userHelper;
-    }
 }

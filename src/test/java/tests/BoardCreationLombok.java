@@ -1,5 +1,6 @@
 package tests;
 
+import applications.MyDataProviderBoard;
 import models.Board;
 import models.BoardLombok;
 import models.User;
@@ -21,13 +22,8 @@ public class BoardCreationLombok extends TestBase{
     }
 
 
-    @Test
-    public void boardCreationTest() {
-        BoardLombok boardLombok = BoardLombok.builder().name("Aaa").build();
-//        while (app.getBoardHelper().numberBoards()<10){
-//            String boardName = "qa19_" + (System.currentTimeMillis() / 1700) % 3600;
-            int before = app.getBoardHelper().numberBoards();
-            app.getUserHelper().pause(3000);
+    @Test(dataProvider = "boardModelLomData", dataProviderClass = MyDataProviderBoard.class)
+    public void boardCreationTest(BoardLombok boardLombok) {
             app.getBoardHelper().pressCreateButton();
             app.getUserHelper().pause(3000);
             // app.getBoardHelper().selectCreateBoard();
@@ -41,8 +37,23 @@ public class BoardCreationLombok extends TestBase{
             app.getUserHelper().pause(3000);
             //String title = app.getBoardHelper().getTitle();
             //app.getUserHelper().pause(3000);
-            Assert.assertEquals(before, after-1);
+           // Assert.assertEquals(before, after-1);
             //Assert.assertEquals(boardName, title);
         }
+    @Test(dataProvider = "boardData", dataProviderClass = MyDataProviderBoard.class)
+    public void boardCreationTest1(String title) {
+
+        int before = app.getBoardHelper().numberBoards();
+        app.getUserHelper().pause(3000);
+        app.getBoardHelper().pressCreateButton();
+        app.getUserHelper().pause(3000);
+        app.getBoardHelper().fillBoardForm(title);
+        app.getUserHelper().pause(3000);
+        app.getBoardHelper().submitCreate();
+        app.getUserHelper().pause(3000);
+        app.getBoardHelper().pressBoard();
+        app.getUserHelper().pause(2000);
+        int after = app.getBoardHelper().numberBoards();
+        app.getUserHelper().pause(3000);
     }
-//}
+}

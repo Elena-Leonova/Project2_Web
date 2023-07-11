@@ -1,5 +1,6 @@
 package tests;
 
+import applications.MyDataProviderBoard;
 import models.Board;
 import models.User;
 import org.openqa.selenium.By;
@@ -44,25 +45,40 @@ public class BoardCreation extends TestBase {
 
     @Test
     public void boardCreationTest() {
-         while (app.getBoardHelper().numberBoards()<10){
-        String boardName = "qa19_" + (System.currentTimeMillis() / 1700) % 3600;
-         int before = app.getBoardHelper().numberBoards();
-        app.getUserHelper().pause(3000);
-        app.getBoardHelper().pressCreateButton();
-        app.getUserHelper().pause(3000);
-        // app.getBoardHelper().selectCreateBoard();
-        app.getBoardHelper().fillBoardForm(new Board().withName(boardName));
-        app.getUserHelper().pause(3000);
-        app.getBoardHelper().submitCreate();
-        app.getUserHelper().pause(3000);
-        app.getBoardHelper().pressBoard();
-        app.getUserHelper().pause(2000);
-        int after = app.getBoardHelper().numberBoards();
-        app.getUserHelper().pause(3000);
-        //String title = app.getBoardHelper().getTitle();
-        //app.getUserHelper().pause(3000);
-        Assert.assertEquals(before, after-1);
-        //Assert.assertEquals(boardName, title);
+        while (app.getBoardHelper().numberBoards() < 10) {
+            String boardName = "qa19_" + (System.currentTimeMillis() / 1700) % 3600;
+            int before = app.getBoardHelper().numberBoards();
+            app.getUserHelper().pause(3000);
+            app.getBoardHelper().pressCreateButton();
+            app.getUserHelper().pause(3000);
+            // app.getBoardHelper().selectCreateBoard();
+            app.getBoardHelper().fillBoardForm(new Board().withName(boardName));
+            app.getUserHelper().pause(3000);
+            app.getBoardHelper().submitCreate();
+            app.getUserHelper().pause(3000);
+            app.getBoardHelper().pressBoard();
+            app.getUserHelper().pause(2000);
+            int after = app.getBoardHelper().numberBoards();
+            app.getUserHelper().pause(3000);
+            //String title = app.getBoardHelper().getTitle();
+            //app.getUserHelper().pause(3000);
+            Assert.assertEquals(before, after - 1);
+            //Assert.assertEquals(boardName, title);
+        }
     }
-}
-}
+
+    @Test(dataProvider = "boardModelClassicData", dataProviderClass = MyDataProviderBoard.class)
+    public void boardCreationTest1(Board board) {
+            app.getBoardHelper().pressCreateButton();
+            app.getUserHelper().pause(3000);
+            // app.getBoardHelper().selectCreateBoard();
+            app.getBoardHelper().fillBoardForm(board);
+            app.getUserHelper().pause(3000);
+            app.getBoardHelper().submitCreate();
+            app.getUserHelper().pause(3000);
+            app.getBoardHelper().pressBoard();
+            app.getUserHelper().pause(2000);
+            int after = app.getBoardHelper().numberBoards();
+            app.getUserHelper().pause(3000);
+        }
+    }

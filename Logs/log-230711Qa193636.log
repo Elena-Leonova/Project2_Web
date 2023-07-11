@@ -1,0 +1,57 @@
+19:36:38.065  INFO  applications.ApplicationManager - Test run in Chrome browser 
+19:36:39.749  INFO  tests.TestBase - Test start --> boardCreationTest
+19:36:39.750  INFO  applications.MyListener - Before find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+19:36:39.761  INFO  applications.MyListener - After find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+19:36:39.761  INFO  applications.MyListener - List size is --> 0
+19:36:39.761  INFO  applications.MyListener - Before find element by --> By.xpath: //a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']
+19:36:39.777  INFO  applications.MyListener - After find element by --> By.xpath: //a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']
+19:36:40.801  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='user']
+19:36:40.824  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='user']
+19:36:40.856  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='user']
+19:36:40.868  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='user']
+19:36:40.889  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='user']
+19:36:40.900  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='user']
+19:36:40.953  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='login']
+19:36:40.967  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='login']
+19:36:44.001  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='password']
+19:36:44.026  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='password']
+19:36:44.059  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='password']
+19:36:44.076  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='password']
+19:36:44.097  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='password']
+19:36:44.112  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='password']
+19:36:44.150  INFO  applications.MyListener - Before find element by --> By.xpath: //span[text()='Log in']
+19:36:44.168  INFO  applications.MyListener - After find element by --> By.xpath: //span[text()='Log in']
+19:36:47.212  INFO  applications.MyListener - Before find element by --> By.xpath: //span[text()='Create new board']
+19:36:49.395  INFO  applications.MyListener - Have a problem
+19:36:49.395  INFO  applications.MyListener - The name of error --> findElement
+19:36:49.396  INFO  applications.MyListener - Describe the error --> org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Create new board']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3f0dce177bf21e0cd45a64998b7386c, findElement {using=xpath, value=//span[text()='Create new board']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lenap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53564}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53564/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3f0dce177bf21e0cd45a64998b7386c
+19:36:49.397  INFO  applications.MyListener - ChromeDriver: chrome on WINDOWS (a3f0dce177bf21e0cd45a64998b7386c)
+19:36:49.397  INFO  applications.MyListener - Screen with error --> src/test/resources/screens/screen1585.png
+19:36:49.583  INFO  tests.TestBase - ============================================================
+19:36:49.583  INFO  tests.TestBase - Test start --> boardCreationTest
+19:36:49.584  INFO  applications.MyListener - Before find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+19:36:49.600  INFO  applications.MyListener - After find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+19:36:49.601  INFO  applications.MyListener - List size is --> 1
+19:36:49.601  INFO  applications.MyListener - Before find element by --> By.xpath: //span[text()='Create new board']
+19:36:49.611  INFO  applications.MyListener - Have a problem
+19:36:49.611  INFO  applications.MyListener - The name of error --> findElement
+19:36:49.611  INFO  applications.MyListener - Describe the error --> org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Create new board']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3f0dce177bf21e0cd45a64998b7386c, findElement {using=xpath, value=//span[text()='Create new board']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lenap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53564}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53564/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3f0dce177bf21e0cd45a64998b7386c
+19:36:49.611  INFO  applications.MyListener - ChromeDriver: chrome on WINDOWS (a3f0dce177bf21e0cd45a64998b7386c)
+19:36:49.611  INFO  applications.MyListener - Screen with error --> src/test/resources/screens/screen1487.png
+19:36:49.764  INFO  tests.TestBase - ============================================================

@@ -1,0 +1,59 @@
+19:37:38.651  INFO  applications.ApplicationManager - Test run in Chrome browser 
+19:37:40.435  INFO  tests.TestBase - Test start --> boardCreationTest
+19:37:40.436  INFO  applications.MyListener - Before find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+19:37:40.449  INFO  applications.MyListener - After find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+19:37:40.449  INFO  applications.MyListener - List size is --> 0
+19:37:40.449  INFO  applications.MyListener - Before find element by --> By.xpath: //a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']
+19:37:40.467  INFO  applications.MyListener - After find element by --> By.xpath: //a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']
+19:37:41.701  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='user']
+19:37:41.723  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='user']
+19:37:41.760  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='user']
+19:37:41.774  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='user']
+19:37:41.799  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='user']
+19:37:41.812  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='user']
+19:37:41.873  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='login']
+19:37:41.887  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='login']
+19:37:44.928  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='password']
+19:37:45.590  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='password']
+19:37:45.628  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='password']
+19:37:45.648  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='password']
+19:37:45.675  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='password']
+19:37:45.692  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='password']
+19:37:45.741  INFO  applications.MyListener - Before find element by --> By.xpath: //span[text()='Log in']
+19:37:45.762  INFO  applications.MyListener - After find element by --> By.xpath: //span[text()='Log in']
+19:37:48.808  INFO  applications.MyListener - Before find element by --> By.xpath: //span[text()='Create new board']
+19:37:51.663  INFO  applications.MyListener - After find element by --> By.xpath: //span[text()='Create new board']
+19:37:54.718  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@data-testid='create-board-title-input']
+19:37:54.736  INFO  applications.MyListener - After find element by --> By.xpath: //input[@data-testid='create-board-title-input']
+19:37:54.776  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@data-testid='create-board-title-input']
+19:37:54.792  INFO  applications.MyListener - After find element by --> By.xpath: //input[@data-testid='create-board-title-input']
+19:37:54.819  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@data-testid='create-board-title-input']
+19:37:54.832  INFO  applications.MyListener - After find element by --> By.xpath: //input[@data-testid='create-board-title-input']
+19:37:57.928  INFO  applications.MyListener - Before find element by --> By.xpath: //button[@data-testid='create-board-submit-button']
+19:37:57.951  INFO  applications.MyListener - After find element by --> By.xpath: //button[@data-testid='create-board-submit-button']
+19:38:01.007  INFO  applications.MyListener - Before find element by --> By.xpath: //p[@class='nNvJhnERHVQb9o']
+19:38:01.031  INFO  applications.MyListener - After find element by --> By.xpath: //p[@class='nNvJhnERHVQb9o']
+19:38:03.107  INFO  applications.MyListener - Before find elements by --> By.cssSelector: .boards-page-board-section-list-item
+19:38:03.182  INFO  applications.MyListener - After find elements by --> By.cssSelector: .boards-page-board-section-list-item
+19:38:03.182  INFO  applications.MyListener - List size is --> 9
+19:38:06.195  INFO  tests.TestBase - ============================================================
+19:38:06.196  INFO  tests.TestBase - Test start --> boardCreationTest
+19:38:06.197  INFO  applications.MyListener - Before find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+19:38:06.217  INFO  applications.MyListener - After find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+19:38:06.217  INFO  applications.MyListener - List size is --> 1
+19:38:06.218  INFO  applications.MyListener - Before find element by --> By.xpath: //span[text()='Create new board']
+19:38:06.239  INFO  applications.MyListener - After find element by --> By.xpath: //span[text()='Create new board']
+19:38:09.318  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@data-testid='create-board-title-input']
+19:38:09.338  INFO  applications.MyListener - After find element by --> By.xpath: //input[@data-testid='create-board-title-input']
+19:38:09.368  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@data-testid='create-board-title-input']
+19:38:09.380  INFO  applications.MyListener - After find element by --> By.xpath: //input[@data-testid='create-board-title-input']
+19:38:09.398  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@data-testid='create-board-title-input']
+19:38:09.409  INFO  applications.MyListener - After find element by --> By.xpath: //input[@data-testid='create-board-title-input']
+19:38:12.501  INFO  applications.MyListener - Before find element by --> By.xpath: //button[@data-testid='create-board-submit-button']
+19:38:12.513  INFO  applications.MyListener - After find element by --> By.xpath: //button[@data-testid='create-board-submit-button']
+19:38:15.543  INFO  applications.MyListener - Before find element by --> By.xpath: //p[@class='nNvJhnERHVQb9o']
+19:38:15.558  INFO  applications.MyListener - After find element by --> By.xpath: //p[@class='nNvJhnERHVQb9o']
+19:38:17.631  INFO  applications.MyListener - Before find elements by --> By.cssSelector: .boards-page-board-section-list-item
+19:38:17.639  INFO  applications.MyListener - After find elements by --> By.cssSelector: .boards-page-board-section-list-item
+19:38:17.640  INFO  applications.MyListener - List size is --> 0
+19:38:20.645  INFO  tests.TestBase - ============================================================
