@@ -10,12 +10,7 @@ public class BoardDeletion extends TestBase {
     @BeforeMethod
     public void preConditions() {
         if (!app.getUserHelper().isElementPresent(By.xpath("//span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']"))) {
-            app.getUserHelper().openLoginForm();
-            app.getUserHelper().fillLoginForm(new User().withEmail("lena.postrash@gmail.com").withPassword("Mynameislena1!"));
-            app.getUserHelper().submitLogin();
-            app.getUserHelper().pause(5000);
-            app.getUserHelper().click(By.xpath("//ul[@class='boards-page-board-section-list']//li"));
-            app.getUserHelper().pause(5000);
+            app.getUserHelper().login();
         }
     }
 
@@ -49,6 +44,22 @@ public class BoardDeletion extends TestBase {
                 //  Assert.assertEquals(before, after + 1);
             }
             System.out.println("there are not already any boards for deletion");
+
+        }
+    }
+
+    @Test
+    public void deletionBoardTest() {
+        while (app.getBoardHelper().boardCounter() > 1) {
+            app.getBoardHelper().pause(2000);
+            app.getBoardHelper().selectFirstBoard();
+            app.getBoardHelper().pause(3000);
+            app.getBoardHelper().openMenu1();
+            app.getBoardHelper().pause(3000);
+            app.getBoardHelper().openMenuMore();
+            app.getBoardHelper().pause(3000);
+            app.getBoardHelper().closeBoard();
+            app.getBoardHelper().pause(2000);
 
         }
     }

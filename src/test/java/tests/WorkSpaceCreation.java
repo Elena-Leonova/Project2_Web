@@ -12,10 +12,7 @@ public class WorkSpaceCreation extends TestBase{
     @BeforeMethod
     public void preConditions() {
         if(!app.getUserHelper().isElementPresent(By.xpath("//span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']"))){
-            app.getUserHelper().openLoginForm();
-            app.getUserHelper().fillLoginForm(new User().withEmail("lena.postrash@gmail.com").withPassword("Mynameislena1!"));
-            app.getUserHelper().submitLogin();
-            app.getUserHelper().pause(5000);
+            app.getUserHelper().login();
         }
     }
 

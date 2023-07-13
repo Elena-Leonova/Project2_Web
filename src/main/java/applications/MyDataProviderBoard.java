@@ -33,7 +33,6 @@ public class MyDataProviderBoard {
         List<Object[]>list =  new ArrayList<>();
         list.add(new Object[]{BoardLombok.builder().name("test qa19L1").build()});
         list.add(new Object[]{BoardLombok.builder().name("test qa19L2").build()});
-
         return list.iterator();
     }
 

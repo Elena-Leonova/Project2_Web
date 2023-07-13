@@ -82,6 +82,7 @@ import java.util.List;
 //        click(By.xpath("//button[@data-testid='close-board-delete-board-confirm-button']"));
 //    }
 
+
         public void createBoard() {
             click(By.xpath("//div[@class='board-tile mod-add']"));
             pause(2000);
@@ -94,7 +95,8 @@ import java.util.List;
             return isElementPresent(By.xpath("//ul[@class='boards-page-board-section-list']//li[1]"));
         }
         public void selectFirstBoard() {
-            click(By.xpath("//ul[@class='boards-page-board-section-list']//li[1])"));
+           // click(By.xpath("//ul[@class='boards-page-board-section-list']//li)"));
+            click(By.cssSelector("div[class='all-boards'] li:nth-child(1)"));
 
         }
 
@@ -135,11 +137,10 @@ import java.util.List;
 //        }
 
         public void boardDeletionPath() {
-            pause(4000);
+            pause(2000);
            // click(By.xpath("//li[@class='mlpxvZU4v4cMQN wVRQcl7CJz79Tr qUkRGnTnJDff85']//a[@class='cZx7p8hAQGLEz5 l7ix_KdG4LuugK']"));
            // click(By.xpath("//a[normalize-space()='qa19_1687723339634']"));
             //click(By.xpath("//ul[@class='boards-page-board-section-list']//li[1]"));
-            pause(3000);
             WebElement el = wd.findElement(By.xpath("//li[@class='mlpxvZU4v4cMQN wVRQcl7CJz79Tr qUkRGnTnJDff85']//div[@role='menu']//span[@class='css-snhnyn']"));
             pause(4000);
             new Actions(wd).moveToElement(el).clickAndHold().click(el).build().perform();
@@ -184,13 +185,60 @@ import java.util.List;
                 click(By.cssSelector(".nNvJhnERHVQb9o"));
                 pause(2000);
             }
-
-
         }
 
         public void fillBoardForm(String title) {
             type(By.xpath("//input[@data-testid='create-board-title-input']"), title);
         }
+
+        public int boardCounter() {
+            List<WebElement> boardlist = wd.findElements(By.cssSelector(".boards-page-board-section-list-item"));
+            return boardlist.size();
+        }
+
+        public void openMenu() {
+            if (!wd.findElement(By.xpath(" //*[@class='nch-textfield__input.lsOhPsHuxEMYEb.lsOhPsHuxEMYEb.VkPAAkbpkKnPst']")).isDisplayed()) {
+                pause(3000);
+                WebElement el = wd.findElement(By.xpath("//button[@aria-label='Show menu']//span[@class='css-snhnyn']"));
+                //click(By.xpath("//button[@aria-label='Show menu']"));
+                new Actions(wd).moveToElement(el).click().perform();
+                pause(3000);
+                WebElement el1 = wd.findElement(By.xpath("//a[@class='board-menu-navigation-item-link js-open-more']"));
+                new Actions(wd).moveToElement(el1).click().perform();
+            } else {
+                pause(3000);
+                WebElement el1 = wd.findElement(By.xpath("//a[@class='board-menu-navigation-item-link js-open-more']"));
+                new Actions(wd).moveToElement(el1).click().perform();
+
+            }//  //a[@class='board-menu-navigation-item-link js-open-more']
+        }
+
+        public void openMenu1() {
+            click(By.xpath(" //button[@aria-label='Show menu']//span[@class='css-snhnyn']"));
+        }
+
+        public void openMenuMore() {
+            click(By.cssSelector(".board-menu-navigation-item-link.js-open-more"));
+        }//.icon-sm.icon-overflow-menu-horizontal.board-menu-navigation-item-link-icon
+
+        public void closeBoard() {
+            click(By.cssSelector(".board-menu-navigation-item-link.js-close-board"));
+            pause(1000);
+            click(By.cssSelector(".js-confirm.full.nch-button.nch-button--danger"));
+            pause(1000);
+            //click(By.cssSelector(".Bp80TGmc9hQIdE.bxgKMAm3lq5BpA.V_9lMAQOdk_AYt.SEj5vUdI3VvxDc"));
+            click(By.xpath("//button[.='Permanently delete board']"));
+            pause(1000); //.Bp80TGmc9hQIdE.bxgKMAm3lq5BpA.V_9lMAQOdk_AYt.SEj5vUdI3VvxDc"
+            click(By.xpath("//button[@class='a72r81xglmtLCW bxgKMAm3lq5BpA KpU415sFFvOzGZ PnEv2xIWy3eSui SEj5vUdI3VvxDc']"));
+            pause(5000);
+
+        }
+
+
+        public void selectCreateBoard() {
+            click(By.xpath("//*[text()='Create board']"));
+        }
+
     }
 
 

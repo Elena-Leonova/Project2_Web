@@ -1,0 +1,51 @@
+23:59:57.398  INFO  applications.ApplicationManager - Test run in Chrome browser 
+23:59:59.561  INFO  tests.TestBase - Test start --> deletionBoardTest
+23:59:59.562  INFO  applications.MyListener - Before find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+23:59:59.587  INFO  applications.MyListener - After find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+23:59:59.588  INFO  applications.MyListener - List size is --> 0
+23:59:59.588  INFO  applications.MyListener - Before find element by --> By.xpath: //a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']
+23:59:59.617  INFO  applications.MyListener - After find element by --> By.xpath: //a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']
+00:00:01.000  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='user']
+00:00:01.024  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='user']
+00:00:01.066  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='user']
+00:00:01.084  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='user']
+00:00:01.107  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='user']
+00:00:01.119  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='user']
+00:00:01.179  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='login']
+00:00:01.194  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='login']
+00:00:04.243  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='password']
+00:00:04.303  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='password']
+00:00:04.394  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='password']
+00:00:04.432  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='password']
+00:00:04.484  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='password']
+00:00:04.529  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='password']
+00:00:04.626  INFO  applications.MyListener - Before find element by --> By.xpath: //span[text()='Log in']
+00:00:04.661  INFO  applications.MyListener - After find element by --> By.xpath: //span[text()='Log in']
+00:00:07.745  INFO  applications.MyListener - Before find elements by --> By.cssSelector: .boards-page-board-section-list-item
+00:00:09.988  INFO  applications.MyListener - After find elements by --> By.cssSelector: .boards-page-board-section-list-item
+00:00:09.988  INFO  applications.MyListener - List size is --> 5
+00:00:11.995  INFO  applications.MyListener - Before find element by --> By.cssSelector: div[class='all-boards'] li:nth-child(1)
+00:00:12.029  INFO  applications.MyListener - After find element by --> By.cssSelector: div[class='all-boards'] li:nth-child(1)
+00:00:15.293  INFO  applications.MyListener - Before find element by --> By.xpath:  //button[@aria-label='Show menu']//span[@class='css-snhnyn']
+00:00:15.333  INFO  applications.MyListener - After find element by --> By.xpath:  //button[@aria-label='Show menu']//span[@class='css-snhnyn']
+00:00:18.428  INFO  applications.MyListener - Before find element by --> By.cssSelector: .board-menu-navigation-item-link.js-open-more
+00:00:18.498  INFO  applications.MyListener - After find element by --> By.cssSelector: .board-menu-navigation-item-link.js-open-more
+00:00:21.634  INFO  applications.MyListener - Before find element by --> By.cssSelector: .board-menu-navigation-item-link.js-close-board
+00:00:21.675  INFO  applications.MyListener - After find element by --> By.cssSelector: .board-menu-navigation-item-link.js-close-board
+00:00:22.770  INFO  applications.MyListener - Before find element by --> By.cssSelector: .js-confirm.full.nch-button.nch-button--danger
+00:00:22.811  INFO  applications.MyListener - After find element by --> By.cssSelector: .js-confirm.full.nch-button.nch-button--danger
+00:00:23.946  INFO  applications.MyListener - Before find element by --> By.cssSelector: .Bp80TGmc9hQIdE.bxgKMAm3lq5BpA.V_9lMAQOdk_AYt.SEj5vUdI3VvxDc
+00:00:23.982  INFO  applications.MyListener - Have a problem
+00:00:23.983  INFO  applications.MyListener - The name of error --> findElement
+00:00:23.986  INFO  applications.MyListener - Describe the error --> org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".Bp80TGmc9hQIdE.bxgKMAm3lq5BpA.V_9lMAQOdk_AYt.SEj5vUdI3VvxDc"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [073a393b5526962d5dffbf5817378586, findElement {using=css selector, value=.Bp80TGmc9hQIdE.bxgKMAm3lq5BpA.V_9lMAQOdk_AYt.SEj5vUdI3VvxDc}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lenap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55479}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55479/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 073a393b5526962d5dffbf5817378586
+00:00:23.989  INFO  applications.MyListener - ChromeDriver: chrome on WINDOWS (073a393b5526962d5dffbf5817378586)
+00:00:23.990  INFO  applications.MyListener - Screen with error --> src/test/resources/screens/screen1618.png
+00:00:24.385  INFO  tests.TestBase - ============================================================

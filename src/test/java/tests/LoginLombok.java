@@ -16,7 +16,7 @@ public class LoginLombok extends TestBase {
         logger.info("Test login positive --> " + userLombok.getEmail() + " " + userLombok.getPassword());
         app.getUserHelper().openLoginForm();
         app.getUserHelper().fillLoginForm(userLombok);
-        app.getUserHelper().submitLogin();
+        app.getUserHelper().submitLogIn();
         app.getUserHelper().pause(10000);
         logger.info("Logged ----");
         Assert.assertTrue(app.getUserHelper().isElementPresent(By.xpath("//span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']")));
@@ -28,7 +28,7 @@ public class LoginLombok extends TestBase {
         logger.info("Test negative with wrong password --> " + userLombok.getEmail() + " " + userLombok.getPassword());
         app.getUserHelper().openLoginForm();
         app.getUserHelper().fillLoginForm(userLombok);
-        app.getUserHelper().submitLogin();
+        app.getUserHelper().submitLogIn();
         app.getUserHelper().pause(10000);
         logger.info("Test failed ");
         Assert.assertTrue(app.getUserHelper()

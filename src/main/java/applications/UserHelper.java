@@ -32,7 +32,7 @@ public class UserHelper extends HelperBase {
         pause(3000);
         type(By.xpath("//input[@id='password']"), userLombok.getPassword());
     }
-    public void submitLogin() {
+    public void submitLogIn() {
         click(By.xpath("//span[text()='Log in']"));
     }
 
@@ -66,5 +66,14 @@ public class UserHelper extends HelperBase {
         new Actions(wd).moveToElement(el).click(el).sendKeys("name" + Keys.ENTER).build().perform();
     }
 
+    public void login(){
+        openLoginForm();
+        fillLoginForm(new User().withEmail("lena.postrash@gmail.com").withPassword("Mynameislena1!"));
+        submitLogIn();
+        pause(3000);
+    }
+    public void back() {
+        wd.navigate().back();
+    }
 
 }

@@ -14,7 +14,7 @@ public class WorkSpaceHelper extends HelperBase{
 
     public void pressPlusButton() {
         //click(By.cssSelector(".vLNnCqZ9t8iYVd"));
-        click(By.cssSelector("//button[@aria-label='Create a Workspace']//span[@class='_BwhWIRGqM8j8m']"));
+        click(By.cssSelector(".vLNnCqZ9t8iYVd"));
         pause(2000);
     }
 
@@ -37,6 +37,6 @@ public class WorkSpaceHelper extends HelperBase{
     }
 
     public String getTitle() {
-        return wd.findElement(By.xpath("")).getText();
+        return wd.findElement(By.xpath("//h2[@class='SiP6d2d_8FAAkC']")).getText();
     }
 }

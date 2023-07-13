@@ -33,6 +33,7 @@ public class ApplicationManager {
        wd.navigate().to("https://trello.com/home");
        userHelper = new UserHelper(wd);
        boardHelper= new BoardHelper(wd);
+       workSpaceHelper = new WorkSpaceHelper(wd);
    }
 
     public WorkSpaceHelper getWorkSpaceHelper() {

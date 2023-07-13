@@ -1,4 +1,0 @@
-10:23:57.537  INFO  tests.TestBase - Test start --> negativePasswordLoginTest
-10:23:57.540  INFO  tests.TestBase - Test negative with wrong password --> lena.postrash@gmail.com Mynameislena1
-10:24:12.441  INFO  tests.TestBase - Test failed 
-10:24:12.476  INFO  tests.TestBase - ============================================================

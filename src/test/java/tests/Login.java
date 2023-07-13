@@ -11,7 +11,7 @@ public class Login extends TestBase{
     public void positiveLoginTest(){
         app.getUserHelper().openLoginForm();
         app.getUserHelper().fillLoginForm(new User().withEmail("lena.postrash@gmail.com").withPassword("Mynameislena1!"));
-        app.getUserHelper().submitLogin();
+        app.getUserHelper().submitLogIn();
         app.getUserHelper().pause(10000);
         Assert.assertTrue(app.getUserHelper().isElementPresent(By.xpath("//span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']")));
     }
@@ -20,7 +20,7 @@ public class Login extends TestBase{
     public void negativePasswordLoginTest(){
         app.getUserHelper().openLoginForm();
         app.getUserHelper().fillLoginForm(new User().withEmail("lena.postrash@gmail.com").withPassword("Mynameislena1"));
-        app.getUserHelper().submitLogin();
+        app.getUserHelper().submitLogIn();
         app.getUserHelper().pause(10000);
         Assert.assertTrue(app.getUserHelper()
                 .isElementPresent(By.xpath("//span[contains(text(),'Incorrect email address and / or password. If you ')]")));
@@ -51,7 +51,7 @@ public class Login extends TestBase{
             //Assert.assertTrue(app.getUserHelper().isElementPresent(By.xpath("//a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']")));
             app.getUserHelper().openLoginForm();
             app.getUserHelper().fillLoginForm(new User().withEmail("lena.postrash@gmail.com").withPassword("Mynameislena1!"));
-            app.getUserHelper().submitLogin();
+            app.getUserHelper().submitLogIn();
             app.getUserHelper().pause(10000);
             app.getUserHelper().openAccountform();
             app.getUserHelper().pause(2000);
@@ -59,6 +59,7 @@ public class Login extends TestBase{
             app.getUserHelper().pressOkButton();
             app.getUserHelper().pause(2000);
             Assert.assertTrue(app.getUserHelper().isElementPresent(By.xpath("//a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']")));
+            app.getUserHelper().back();
         }
     }
 
@@ -66,7 +67,7 @@ public class Login extends TestBase{
 public void negativeLoginWithoutPassword(){
 app.getUserHelper().openLoginForm();
 app.getUserHelper().fillLoginForm(new User().withEmail("lena.postrash@gmail.com"));
-app.getUserHelper().submitLogin();
+app.getUserHelper().submitLogIn();
 app.getUserHelper().pause(1000);
 Assert.assertTrue(app.getUserHelper().isElementPresent(By.id("password-error")));
 }
