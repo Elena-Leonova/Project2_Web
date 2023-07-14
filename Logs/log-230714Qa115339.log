@@ -1,0 +1,95 @@
+11:53:44.714  INFO  applications.ApplicationManager - Test run in Chrome browser 
+11:53:48.418  INFO  tests.TestBase - Test start --> negativeEmailLoginTest
+11:53:48.422  INFO  applications.MyListener - Before find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+11:53:48.473  INFO  applications.MyListener - After find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+11:53:48.474  INFO  applications.MyListener - List size is --> 0
+11:53:48.481  INFO  applications.MyListener - Before find element by --> By.xpath: //a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']
+11:53:48.584  INFO  applications.MyListener - After find element by --> By.xpath: //a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']
+11:53:52.196  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='user']
+11:53:52.297  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='user']
+11:53:52.457  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='user']
+11:53:52.525  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='user']
+11:53:52.642  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='user']
+11:53:52.700  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='user']
+11:53:52.876  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='login']
+11:53:52.925  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='login']
+11:53:55.041  INFO  applications.MyListener - Before find elements by --> By.xpath: //input[@id='login']
+11:53:55.117  INFO  applications.MyListener - After find elements by --> By.xpath: //input[@id='login']
+11:53:55.118  INFO  applications.MyListener - List size is --> 1
+11:53:55.129  INFO  tests.TestBase - ============================================================
+11:53:55.139  INFO  tests.TestBase - Test start --> negativeLoginWithoutPassword
+11:53:55.140  INFO  applications.MyListener - Before find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+11:53:55.184  INFO  applications.MyListener - After find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+11:53:55.185  INFO  applications.MyListener - List size is --> 0
+11:53:55.186  INFO  applications.MyListener - Before find element by --> By.xpath: //a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']
+11:53:55.246  INFO  applications.MyListener - Have a problem
+11:53:55.246  INFO  applications.MyListener - The name of error --> findElement
+11:53:55.250  INFO  applications.MyListener - Describe the error --> org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aa49d3dc6f08f67c4cac2636fe25e84a, findElement {using=xpath, value=//a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lenap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58912}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58912/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aa49d3dc6f08f67c4cac2636fe25e84a
+11:53:55.251  INFO  applications.MyListener - ChromeDriver: chrome on WINDOWS (aa49d3dc6f08f67c4cac2636fe25e84a)
+11:53:55.252  INFO  applications.MyListener - Screen with error --> src/test/resources/screens/screen1636.png
+11:53:55.544  INFO  tests.TestBase - ============================================================
+11:53:55.546  INFO  tests.TestBase - Test start --> negativePasswordLoginTest
+11:53:55.547  INFO  applications.MyListener - Before find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+11:53:55.582  INFO  applications.MyListener - After find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+11:53:55.583  INFO  applications.MyListener - List size is --> 0
+11:53:55.585  INFO  applications.MyListener - Before find element by --> By.xpath: //a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']
+11:53:55.625  INFO  applications.MyListener - Have a problem
+11:53:55.627  INFO  applications.MyListener - The name of error --> findElement
+11:53:55.629  INFO  applications.MyListener - Describe the error --> org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aa49d3dc6f08f67c4cac2636fe25e84a, findElement {using=xpath, value=//a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lenap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58912}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58912/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aa49d3dc6f08f67c4cac2636fe25e84a
+11:53:55.631  INFO  applications.MyListener - ChromeDriver: chrome on WINDOWS (aa49d3dc6f08f67c4cac2636fe25e84a)
+11:53:55.633  INFO  applications.MyListener - Screen with error --> src/test/resources/screens/screen1476.png
+11:53:55.857  INFO  tests.TestBase - ============================================================
+11:53:55.858  INFO  tests.TestBase - Test start --> positiveLoginTest
+11:53:55.861  INFO  applications.MyListener - Before find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+11:53:55.883  INFO  applications.MyListener - After find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+11:53:55.884  INFO  applications.MyListener - List size is --> 0
+11:53:55.885  INFO  applications.MyListener - Before find element by --> By.xpath: //a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']
+11:53:55.910  INFO  applications.MyListener - Have a problem
+11:53:55.911  INFO  applications.MyListener - The name of error --> findElement
+11:53:55.912  INFO  applications.MyListener - Describe the error --> org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aa49d3dc6f08f67c4cac2636fe25e84a, findElement {using=xpath, value=//a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lenap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58912}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58912/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aa49d3dc6f08f67c4cac2636fe25e84a
+11:53:55.913  INFO  applications.MyListener - ChromeDriver: chrome on WINDOWS (aa49d3dc6f08f67c4cac2636fe25e84a)
+11:53:55.913  INFO  applications.MyListener - Screen with error --> src/test/resources/screens/screen1703.png
+11:53:56.137  INFO  tests.TestBase - ============================================================
+11:53:56.156  INFO  tests.TestBase - Test start --> positiveLoginTestDP
+11:53:56.158  INFO  applications.MyListener - Before find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+11:53:56.187  INFO  applications.MyListener - After find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+11:53:56.187  INFO  applications.MyListener - List size is --> 0
+11:53:56.188  INFO  applications.MyListener - Before find element by --> By.xpath: //a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']
+11:53:56.221  INFO  applications.MyListener - Have a problem
+11:53:56.221  INFO  applications.MyListener - The name of error --> findElement
+11:53:56.222  INFO  applications.MyListener - Describe the error --> org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aa49d3dc6f08f67c4cac2636fe25e84a, findElement {using=xpath, value=//a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lenap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58912}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58912/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aa49d3dc6f08f67c4cac2636fe25e84a
+11:53:56.223  INFO  applications.MyListener - ChromeDriver: chrome on WINDOWS (aa49d3dc6f08f67c4cac2636fe25e84a)
+11:53:56.223  INFO  applications.MyListener - Screen with error --> src/test/resources/screens/screen1619.png
+11:53:56.417  INFO  tests.TestBase - ============================================================

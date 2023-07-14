@@ -76,4 +76,14 @@ public class UserHelper extends HelperBase {
         wd.navigate().back();
     }
 
+    public boolean isLogged() {
+       return wd.findElements(By.xpath("//span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']")).size()>0;
+    }
+
+    public void logOut() {
+        click(By.xpath("//span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']"));
+        pause(3000);
+        click(By.xpath("//*[text()='Log out']"));
+        click(By.xpath("//*[text()='Log out']"));
+    }
 }

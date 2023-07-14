@@ -1,0 +1,24 @@
+10:59:59.130  INFO  applications.ApplicationManager - Test run in Chrome browser 
+11:00:02.335  INFO  tests.TestBase - Test start --> positiveLoginTestDP
+11:00:02.340  INFO  applications.MyListener - Before find element by --> By.xpath: //a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']
+11:00:02.536  INFO  applications.MyListener - After find element by --> By.xpath: //a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']
+11:00:04.146  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='user']
+11:00:04.210  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='user']
+11:00:04.346  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='user']
+11:00:04.408  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='user']
+11:00:04.498  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='user']
+11:00:04.557  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='user']
+11:00:04.761  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='login']
+11:00:04.815  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='login']
+11:00:07.942  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='password']
+11:00:08.016  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='password']
+11:00:08.214  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='password']
+11:00:08.273  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='password']
+11:00:08.379  INFO  applications.MyListener - Before find element by --> By.xpath: //input[@id='password']
+11:00:08.424  INFO  applications.MyListener - After find element by --> By.xpath: //input[@id='password']
+11:00:08.593  INFO  applications.MyListener - Before find element by --> By.xpath: //span[text()='Log in']
+11:00:08.640  INFO  applications.MyListener - After find element by --> By.xpath: //span[text()='Log in']
+11:00:18.797  INFO  applications.MyListener - Before find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+11:00:18.864  INFO  applications.MyListener - After find elements by --> By.xpath: //span[@class='DweEFaF5owOe02 V_PnoJ2AynVwLp G6CmOLx93OUZez']
+11:00:18.865  INFO  applications.MyListener - List size is --> 1
+11:00:18.874  INFO  tests.TestBase - ============================================================
