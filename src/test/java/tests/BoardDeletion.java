@@ -48,7 +48,7 @@ public class BoardDeletion extends TestBase {
         }
     }
 
-   // @Test
+    @Test(groups = "group")
     public void deletionBoardTest() {
         while (app.getBoardHelper().boardCounter() > 1) {
             app.getBoardHelper().pause(2000);

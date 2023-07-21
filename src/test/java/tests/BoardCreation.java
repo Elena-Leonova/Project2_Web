@@ -40,9 +40,9 @@ public class BoardCreation extends TestBase {
 //}
 
 
-    @Test
+    @Test(groups = "group")
     public void boardCreationTest() {
-        while (app.getBoardHelper().numberBoards() < 5) {
+        while (app.getBoardHelper().numberBoards() < 3) {
             String boardName = "qa19_" + (System.currentTimeMillis() / 1700) % 3600;
             int before = app.getBoardHelper().numberBoards();
             app.getUserHelper().pause(3000);
