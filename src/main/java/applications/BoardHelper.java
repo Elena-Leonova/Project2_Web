@@ -239,6 +239,12 @@ import java.util.List;
             click(By.xpath("//*[text()='Create board']"));
         }
 
+        public void clickTheAvatar() {
+            click(By.cssSelector("//span[title='Elena Leonova (lenapostrash)']"));
+            click(By.xpath("//*[text()='Profile and visibility']"));
+            click(By.xpath("//*[text()='Atlassian profile']"));
+
+        }
     }
 
 
